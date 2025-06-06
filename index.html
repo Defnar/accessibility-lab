@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Accessible Design, Co.</title>
   </head>
   <body>
@@ -12,62 +19,62 @@
         <ul>
           <li><a href="home">Home</a></li>
           <li><a href="#about">About Us</a></li>
-          <li><a href="#services">Why Accessibility</a></li>
+          <li><a href="#services">Services</a></li>
           <li><a href="contact">Contact Us</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <section id="hero">
-        <h1>Accessible Design Co.</h1>
+        <h1 id="home">Accessible Design Co.</h1>
         <img src="" />
       </section>
-      <section id="about">
-        <h2>About Us</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-          inventore expedita, reiciendis eius saepe fugiat animi ullam modi sed
-          in quasi totam fugit sapiente illo delectus deserunt asperiores
-          eveniet aliquid?
-        </p>
-      </section>
-      <section id="services">
-        <h2>Services</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum soluta
-          sunt suscipit rem laboriosam fuga, ea ipsum atque tempore quidem nemo
-          ab aliquid tenetur optio. Officia optio corrupti tempore ullam.
-        </p>
-      </section>
-      </main>
-      <section id="contact">
-        <h2>Contact Us</h2>
-        <form>
-          <label for="name">Name: </label>
-          <input
-            type="text"
-            placeholder="John Doe"
-            id="name"
-            name="name"
-            required
-          />
-          <label for="email">Email: </label>
-          <input
-            type="email"
-            placeholder="example@email.com"
-            required
-            aria-required="true"
-            id="email"
-            name="email"
-          />
-          <label for="comment">Comment</label>
-          <textarea
-            placeholder="Please leave your comment here"
-            required
-            aria-required="true"
-            id="comment"
-            name="comment"></textarea>
-        </form>
-      </section>
+      <div id="container">
+        <section id="about">
+          <h2>About Us</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+            inventore expedita, reiciendis eius saepe fugiat animi ullam modi
+            sed in quasi totam fugit sapiente illo delectus deserunt asperiores
+            eveniet aliquid?
+          </p>
+        </section>
+        <section id="services">
+          <h2>Services</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
+            soluta sunt suscipit rem laboriosam fuga, ea ipsum atque tempore
+            quidem nemo ab aliquid tenetur optio. Officia optio corrupti tempore
+            ullam.
+          </p>
+        </section>
+      </div>
+    </main>
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form>
+        <label for="name">Name: </label>
+        <input
+          type="text"
+          placeholder="John Doe"
+          id="name"
+          name="name"
+          required
+        />
+        <label for="email">Email: </label>
+        <input
+          type="email"
+          placeholder="example@email.com"
+          required
+          aria-required="true"
+          id="email"
+          name="email"
+        />
+        <label for="comment">Comment</label>
+        <textarea required aria-required="true" id="comment" name="comment">
+Tell us about your experience</textarea
+        >
+      </form>
+    </section>
   </body>
 </html>
