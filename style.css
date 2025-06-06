@@ -2,15 +2,30 @@
     font-family: "Roboto Flex", sans-serif;
 }
 
+:root {
+    --bg: #CCC9DC
+}
 
 body {
     margin: 0 10%;
-    background-color: #CCC9DC;
+    background-color: var(--bg);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0C1821;
+    gap: 20px;
+    color: var(--bg);
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
 }
 
 nav {
-    background-color: #1B2A41;
-    position: fixed;
+    
     top: 0;
     left: 0;
     width: 100%;
@@ -26,13 +41,17 @@ nav ul {
 }
 
 nav ul a {
-    color: white;
+    color: var(--bg);
     text-decoration: none;
 }
 
-
+header img {
+    width: 40px;
+    background-color: #CCC9DC;
+}
 
 #container {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 10px;
 }
