@@ -18,23 +18,56 @@
       </nav>
     </header>
     <main>
-        <section id="hero">
-            <h1>Accessibility </h1>
-            <img src="">
-        </section>
-        <section id="about">
-            <h2>About Us</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam inventore expedita, reiciendis eius saepe fugiat animi ullam modi sed in quasi totam fugit sapiente illo delectus deserunt asperiores eveniet aliquid?</p>
-        </section>
-        <section id="services">
-            <h2>Services</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum soluta sunt suscipit rem laboriosam fuga, ea ipsum atque tempore quidem nemo ab aliquid tenetur optio. Officia optio corrupti tempore ullam.</p>
-        </section>
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus esse quo incidunt facere expedita nostrum, tempora earum excepturi eius eligendi. Voluptas sequi, dolores harum ipsam ducimus sed odio alias ratione?</p>
-        </section>
-         </section>
+      <section id="hero">
+        <h1>Accessibility</h1>
+        <img src="" />
+      </section>
+      <section id="about">
+        <h2>About Us</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+          inventore expedita, reiciendis eius saepe fugiat animi ullam modi sed
+          in quasi totam fugit sapiente illo delectus deserunt asperiores
+          eveniet aliquid?
+        </p>
+      </section>
+      <section id="services">
+        <h2>Services</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum soluta
+          sunt suscipit rem laboriosam fuga, ea ipsum atque tempore quidem nemo
+          ab aliquid tenetur optio. Officia optio corrupti tempore ullam.
+        </p>
+      </section>
+      <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+          <label for="name">Name: </label>
+          <input
+            type="text"
+            placeholder="John Doe"
+            id="name"
+            name="name"
+            required
+          />
+          <label for="email">Email: </label>
+          <input
+            type="email"
+            placeholder="example@email.com"
+            required
+            aria-required="true"
+            id="email"
+            name="email"
+          />
+          <label for="comment">Comment</label>
+          <textarea
+            placeholder="Please leave your comment here"
+            required
+            aria-required="true"
+            id="comment"
+            name="comment"></textarea>
+        </form>
+      </section>
     </main>
   </body>
 </html>
