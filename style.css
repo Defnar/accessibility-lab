@@ -4,6 +4,7 @@
 
 :root {
   --light: #ccc9dc;
+  --nav-color: #0c1821
 }
 
 body {
@@ -15,7 +16,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #0c1821;
+  background-color: var(--nav-color);
   gap: 20px;
   color: var(--light);
   top: 0;
@@ -53,7 +54,7 @@ header img {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  color: #0c1821;
+  color: var(--nav-color);
 }
 
 #hero-image {
@@ -176,6 +177,10 @@ footer section {
   align-items: center
 }
 
+#dropdown {
+  display: none;
+}
+
 @media(max-width: 800px) {
   #container {
     display: flex;
@@ -195,8 +200,42 @@ footer section {
     font-size: 20px;
   }
 
-
   .hero {
     flex-direction: column;
   }
+
+  nav{
+    display: none;
+  }
+
+  #dropdown {
+    display: block;
+  }
+
+  #dropdown-content {
+    display: none;
+    position: fixed;
+    right: 0;
+    top: 40px;
+  }
+
+  #dropdown a{
+    text-decoration: none;
+    background-color:var(--nav-color);
+    color: var(--light);
+  }
+
+  #nav-hamburger {
+    width: 50px;
+    background-color:var(--nav-color);
+    right: 0;
+    top: 10px;
+    position:fixed;
+  }
+
+   #dropdown:hover #dropdown-content {
+display: flex;
+flex-direction: column;
+  }
+
 }
