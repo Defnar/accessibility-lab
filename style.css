@@ -90,6 +90,13 @@ header img {
   padding: 10px;
 }
 
+.hero button {
+  background-color: #1B2A41;
+  color: var(--light)
+}
+
+
+
 #about {
   text-align: center;
 }
