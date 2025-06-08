@@ -84,6 +84,7 @@ header img {
 #container {
   display: grid;
   grid-template-columns: 2fr 1fr;
+  gap: 50px;
 }
 
 .main-section {
@@ -99,4 +100,9 @@ header img {
 
 #about {
   text-align: center;
+  line-height: 1.5em;
+}
+
+#about p{
+  margin-bottom: 50px;
 }
