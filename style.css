@@ -130,3 +130,23 @@ header img {
 #about p{
   margin-bottom: 50px;
 }
+
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  border: 1px dashed red;
+  margin-top: 20px;
+  align-items: center;
+}
+
+#contact-form{
+display: flex;
+flex-direction: column;
+}
+
+#comment{
+  width: 400px;
+  height: 100px;
+  margin-top: 5px;
+}
