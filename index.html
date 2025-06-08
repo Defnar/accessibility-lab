@@ -10,7 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
       rel="stylesheet"
     />
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Accessible Design, Co.</title>
   </head>
   <body>
@@ -111,9 +114,35 @@
         <textarea required aria-required="true" id="comment" name="comment">
 Tell us about your experience</textarea
         >
-        <button type="submit" aria-label="Click the button to submit your comment">Submit</button>
+        <button
+          type="submit"
+          aria-label="Click the button to submit your comment"
+        >
+          Submit
+        </button>
         <div role="alert" aria-live="polite"></div>
       </form>
     </section>
+    <footer>
+      <div id="footer-flex">
+        <section id="contact-us">
+          <h3>Email or Call Us</h3>
+          <p>
+            email:
+            <a href="mailto:support@accessible.com">support@accessible.com</a>
+          </p>
+          <p>phone number: (123) 456-7890</p>
+        </section>
+        <section id="social-media">
+          <h3>Check out our Social Media</h3>
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-linkedin"></a>
+          <a href="#" class="fa fa-youtube"></a>
+          <a href="#" class="fa fa-instagram"></a>
+          <a href="#" class="fa fa-twitter"></a>
+        </section>
+      </div>
+      <p>&copy; Accessible Design Co.</p>
+    </footer>
   </body>
 </html>
