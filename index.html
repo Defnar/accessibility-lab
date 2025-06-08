@@ -96,6 +96,7 @@
             id="name"
             name="name"
             required
+            aria-required="true"
           />
           <label for="email">Email: </label>
           <input
@@ -110,6 +111,8 @@
         <textarea required aria-required="true" id="comment" name="comment">
 Tell us about your experience</textarea
         >
+        <button type="submit" aria-label="Click the button to submit your comment">Submit</button>
+        <div role="alert" aria-live="polite"></div>
       </form>
     </section>
   </body>

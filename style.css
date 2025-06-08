@@ -91,7 +91,7 @@ header img {
   padding: 10px;
 }
 
-.hero button {
+button {
   background-color: #1B2A41;
   color: var(--light)
 }
@@ -136,8 +136,9 @@ header img {
   display: flex;
   flex-direction: column;
   border: 1px dashed red;
-  margin-top: 20px;
+  margin: 20px auto;
   align-items: center;
+  padding-bottom: 30px;
 }
 
 #contact-form{
@@ -149,4 +150,12 @@ flex-direction: column;
   width: 400px;
   height: 100px;
   margin-top: 15px;
+}
+
+input:invalid {
+  border: 2px solid red;
+}
+
+input:valid {
+  border: 2px solid #324A5F;
 }
