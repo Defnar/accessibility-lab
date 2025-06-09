@@ -238,9 +238,29 @@ footer section {
     position:fixed;
   }
 
+  #name-email {
+    display: grid;
+    grid-template-columns: 
+    "label #name"
+    "label #email"
+  }
+
    #dropdown:hover #dropdown-content {
 display: flex;
 flex-direction: column;
+  }
+
+}
+
+@media(max-width: 400px) {
+  #footer-flex {
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 20px;
+  }
+
+  #contact-form, #comment, #comment-button{
+    width: 100%;
   }
 
 }
